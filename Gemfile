@@ -25,7 +25,9 @@ gem 'jbuilder', '~> 2.7'
 # change
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
-gem 'rails_12factor', group: :production
+group :production, :staging do
+      gem 'rails_12factor'
+    end
 
 gem 'bootstrap', '~> 4.3.1'
 gem 'bcrypt', '~> 3.1.7'
