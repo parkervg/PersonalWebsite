@@ -12151,6 +12151,19 @@ hr {
   border-width: 2px;
   border-color: #ffff;
 }
+
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+html, body {
+  margin:0 auto;
+  padding:0;
+  height: 100%;
+  width: 100%;
+}
+
 /* Set a background image by replacing the URL below */
 /* Set a background image by replacing the URL below */
 /* line 1, app/assets/stylesheets/scaffolds.scss */
