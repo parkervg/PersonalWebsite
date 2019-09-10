@@ -12152,11 +12152,13 @@ hr {
   border-color: #ffff;
 }
 
+/* line 166, app/assets/stylesheets/application.scss */
 html {
   overflow-x: hidden;
   overflow-y: scroll;
 }
 
+/* line 171, app/assets/stylesheets/application.scss */
 html, body {
   margin:0 auto;
   padding:0;
