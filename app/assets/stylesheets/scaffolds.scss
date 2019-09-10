@@ -1,10 +1,21 @@
 body {
   background-color: #fff;
   color: #333;
-  margin: 33px;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
+}
+
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+html, body {
+  margin:0 auto;
+  padding:0;
+  height: 100%;
+  width: 100%;
 }
 
 p, ol, ul, td {
