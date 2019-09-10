@@ -46,7 +46,7 @@ html {
 
 
 div.one {
-  background: url('/assets/lake.jpg') no-repeat center center fixed;
+  background: image-url('lake.jpg') no-repeat center center fixed;
   height: 870px;
   background-attachment: scroll;
   background-position: center;
@@ -55,7 +55,7 @@ div.one {
 
 
 div.two {
-  background: url('/assets/tahoe.jpg') no-repeat center center fixed;
+  background: image-url('tahoe.jpg') no-repeat center center fixed;
   height: 870px;
   background-attachment: scroll;
   background-position: center;
@@ -80,7 +80,7 @@ div#one{
 }
 
 div.three {
-  background: url('/assets/dune.jpg') no-repeat center center fixed;
+  background: image-url('/assets/dune.jpg') no-repeat center center fixed;
   height: 870px;
   background-attachment: scroll;
   background-position: center;

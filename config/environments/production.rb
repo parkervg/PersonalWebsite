@@ -24,7 +24,7 @@ Rails.application.configure do
   #config.assets.precompile += %w( home.scss )
   #config.assets.precompile += %w( navbar_scroll.js )
   # Compress CSS using a preprocessor.
-  # config.assets.css_compressor = :sass
+  config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   #config.cache_classes = true
