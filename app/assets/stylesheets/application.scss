@@ -43,11 +43,15 @@ html {
   scroll-behavior: smooth;
 }
 
-
+.table-wrap {
+  height: 700px;
+  overflow-y: auto;
+}
 
 div.one {
   background: image-url('lake.jpg') no-repeat center center fixed;
   height: 870px;
+  background-position: 50% 50%;
   background-attachment: scroll;
   background-position: center;
   background-origin: content-box;
@@ -57,11 +61,17 @@ div.one {
 div.two {
   background: image-url('tahoe.jpg') no-repeat center center fixed;
   height: 870px;
+  background-position: 50% 50%;
   background-attachment: scroll;
   background-position: center;
   background-size: cover;
 }
 
+#wrapper {
+    margin-left:auto;
+    margin-right:auto;
+    width:680px;
+}
 /* Makes the scroll go a little above the anchor
 */
 div#about-me{
@@ -81,10 +91,24 @@ div#one{
 
 div.three {
   background: image-url('/assets/dune.jpg') no-repeat center center fixed;
-  height: 870px;
+  height: 950px;
+  background-position: 50% 50%;
   background-attachment: scroll;
   background-position: center;
   background-size: cover;
+}
+
+.row.equal-height {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row.equal-height > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    flex: 1;
 }
 
 div.card {

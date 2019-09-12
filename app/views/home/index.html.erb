@@ -15,34 +15,31 @@
     <div class="one" id="top">
       <header>
         <!-- Navbar -->
-        <nav class="navbar transparent navbar-expand-lg navbar-light fixed-top scrolling-navbar" id="navbar">
-          <div class="container">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <p class="intro-nav">
-                    <a class="nav-link" href="#top">Home
-                      <span class="sr-only">(current)</span></a>
-                  </p>
-                </li>
-                <li class="nav-item">
-                  <p class="intro-nav">
-                    <a class="nav-link" href="/Resume.pdf">Resume</a>
-                  </p>
-                </li>
-                <li class="nav-item">
-                  <p class="intro-nav">
-                    <a class="nav-link" href="#about-me">About Me</a>
-                  </p>
-                </li>
-                <li class="nav-item">
-                  <p class="intro-nav">
-                    <a class="nav-link" href="#projects">Projects</a>
-                  </p>
-                </li>
-
-              </ul>
-            </div>
+        <nav class="navbar bg-light navbar-expand-lg navbar-light fixed-top scrolling-navbar" id="navbar">
+          <div class="collapse navbar-collapse order-1" id="navbarSupportedContent-7">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <p class="intro-nav">
+                  <a class="nav-link" href="#top">Home
+                    <span class="sr-only">(current)</span></a>
+                </p>
+              </li>
+              <li class="nav-item">
+                <p class="intro-nav">
+                  <a class="nav-link" href="/Resume.pdf">Resume</a>
+                </p>
+              </li>
+              <li class="nav-item">
+                <p class="intro-nav">
+                  <a class="nav-link" href="#about-me">About Me</a>
+                </p>
+              </li>
+              <li class="nav-item">
+                <p class="intro-nav">
+                  <a class="nav-link" href="#projects">Projects</a>
+                </p>
+              </li>
+            </ul>
           </div>
         </header>
         <!-- navbar -->
@@ -80,11 +77,11 @@
             </button>
             <br><br><br>
             <div align="center" class="media-links">
-              <a href="https://www.linkedin.com/in/parker-glenn5/">
+              <a href="https://www.linkedin.com/in/parker-glenn5/" target="_blank">
                 <i class="fa fa-linkedin-square" style="font-size:42px"></i>
               </a>
               <a href="https://github.com/parkervg">
-                <i class="fa fa-github" style="font-size:42px"></i>
+                <i class="fa fa-github" style="font-size:42px" target="_blank"></i>
               </a>
             </div>
           </div>
@@ -97,19 +94,21 @@
     <!-- -->
     <div class="two" id="about-me">
       <div class="info">
-        <div class="mask rgba-black-light align-items-center">
-          <h2 class="black">
-            About me
-          </h2>
-          <br>
-          <p class="black">
-            Hi, my name is Parker Glenn and I'm currently a 4th year student at University of California, Santa Barbara. Pursuing a major in Speech and Language Technology, I am fascinated by the intersection of speech and language.
-          </p>
+        <div id="wrapper">
+          <div class="mask rgba-black-light align-items-center">
+            <h2 class="black">
+              About me
+            </h2>
+            <br>
+            <p class="black">
+              Hi, my name is Parker Glenn and I'm currently a 4th year student at University of California, Santa Barbara. Pursuing a major in Speech and Language Technology, I am fascinated by the intersection of speech and language.
+            </p>
+          </div>
         </div>
       </div>
 
-      <div class="card-group">
-        <div class="card bg-transparent mb-3 rounded">
+      <div class="card-deck flex-row flex-nowrap">
+        <div class="card bg-transparent mb-3 rounded" style="min-width: 20rem; max-height: 30rem;">
           <div class="card-body">
             <h3 class="card-title black">
               Relevant Coursework
@@ -136,7 +135,7 @@
             </ul>
           </div>
         </div>
-        <div class="card bg-transparent mb-3 rounded">
+        <div class="card bg-transparent mb-3 rounded" style="min-width: 20rem; max-height: 30rem;">
           <div class="card-body">
             <h3 class="card-title black">
               Skills
@@ -165,7 +164,7 @@
             </p>
           </div>
         </div>
-        <div class="card bg-transparent mb-3 rounded">
+        <div class="card bg-transparent mb-3 rounded" style="min-width: 20rem; max-height: 30rem;">
           <div class="card-body">
             <h3 class="card-title black">
               Future Studies
@@ -202,90 +201,92 @@
           </h2>
           <br>
         </div>
-        <table class="table">
-          <thead class="thead-light">
-            <tr>
-              <th>Project Name</th>
-              <th>Project Description</th>
-              <th>Primary Tools/Concepts</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <a href="https://github.com/parkervg/news-article-clustering">
-                  <h3>
-                    News Article Clustering</h3>
-                </a>
-              </td>
-              <td class="project-description">
-                <p>
-                  A document similarity project I did while in the Data Science club at UCSB.
-                  <br><br>
-                  With the rise of social media, the ability to publish has been democratized and repetition in the newsfeed runs rampant. This project attempts to group news stories by topic, exploring what specific attributes of text determine topic boundaries.
-                  <br><br>
-                  Throughout the course of the project, I write a TFIDF algorithm from scratch and manipulate features like entities and publication date in attempts to increase my success rate.
-                </p>
-              </td>
-              <td>
-                <p>
-                  Python, spaCy, Sci-Kit Learn, TFIDF, Seaborn, Matplotlib, SVD, Word Vectors
-                </p>
-              </td>
-            </tr>
+        <div class="table-wrap">
+          <table class="table">
+            <thead class="thead-light">
+              <tr>
+                <th>Project Name</th>
+                <th>Project Description</th>
+                <th>Primary Tools/Concepts</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <a href="https://github.com/parkervg/news-article-clustering">
+                    <h3>
+                      News Article Clustering</h3>
+                  </a>
+                </td>
+                <td class="project-description">
+                  <p>
+                    A document similarity project I did while in the Data Science club at UCSB.
+                    <br><br>
+                    With the rise of social media, the ability to publish has been democratized and repetition in the newsfeed runs rampant. This project attempts to group news stories by topic, exploring what specific attributes of text determine topic boundaries.
+                    <br><br>
+                    Throughout the course of the project, I write a TFIDF algorithm from scratch and manipulate features like entities and publication date in attempts to increase my success rate.
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    Python, spaCy, Sci-Kit Learn, TFIDF, Seaborn, Matplotlib, SVD, Word Vectors
+                  </p>
+                </td>
+              </tr>
 
-            <tr>
-              <td>
-                <a href="https://github.com/parkervg/PermitTrends">
-                  <h3>
-                    Permit Trends</h3>
-                </a>
-              </td>
-              <td class="project-description">
-                <p>
-                  A visualization tool I developed during a summer internship.
-                  <br><br>
-                  The ability to stay on top of recent trends in any quick-changing industry is vital. This visualization tool does just that with datasets of construction permits.
-                  <br><br>
-                  In PermtTrends, an owner's baseline rate of application for permits is established, and compared to their recent activity. The owner with the most drastic recent uptick in applications are revealed, and their history charted in matplotlib.
-                  <br><br>
-                  In GeoTrends, the same concept of discovering recent anomalies in data is applied to Geography. DBSCAN is used to find areas which have historically been popular regions to build in. Then, recent permits not within these top areas are clustered and
-                  the nearest intersection found to reveal increasingly popular areas for development.
-                </p>
-              </td>
-              <td>
-                <p>
-                  Python, Docker, nginx, gunicorn, Flask, DBSCAN
-                </p>
-              </td>
-            </tr>
+              <tr>
+                <td>
+                  <a href="https://github.com/parkervg/PermitTrends">
+                    <h3>
+                      Permit Trends</h3>
+                  </a>
+                </td>
+                <td class="project-description">
+                  <p>
+                    A visualization tool I developed during a summer internship.
+                    <br><br>
+                    The ability to stay on top of recent trends in any quick-changing industry is vital. This visualization tool does just that with datasets of construction permits.
+                    <br><br>
+                    In PermtTrends, an owner's baseline rate of application for permits is established, and compared to their recent activity. The owner with the most drastic recent uptick in applications are revealed, and their history charted in matplotlib.
+                    <br><br>
+                    In GeoTrends, the same concept of discovering recent anomalies in data is applied to Geography. DBSCAN is used to find areas which have historically been popular regions to build in. Then, recent permits not within these top areas are clustered and
+                    the nearest intersection found to reveal increasingly popular areas for development.
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    Python, Docker, nginx, gunicorn, Flask, DBSCAN
+                  </p>
+                </td>
+              </tr>
 
-            <tr>
-              <td>
-                <a href="https://github.com/parkervg/troll-tweet-detector/blob/master/Trolliness.ipynb">
-                  <h3>
-                    Troll Tweet Detector</h3>
-                </a>
-              </td>
-              <td class="project-description">
-                <p>
-                  A school project I completed for LING 111 (Advanced Computational Linguistics).
-                  <br><br>
-                  In the season surrounding the 2016 U.S. presidential election, the goal of a politial troll was to stir up as much polarization as possible, all while blending in as an average American citizen. One group of online trolls that were notoriously
-                  successful were the Russian trolls
-                  <br><br>
-                  This Jupyter notebook explores concepts both in machine learning and linguistics to create a binomial classifier that identifies a tweet as a troll or non-troll. I rely on certain linguistic quirks of the Russian language, like their lack of articles
-                  (e.x. "a", "an", "the") and infrequent use of stopwords.
-                </p>
-              </td>
-              <td>
-                <p>
-                  Python, Scikit-machine learning, Random Forest, feature extraction, spaCy, Jupyter notebook
-                </p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+              <tr>
+                <td>
+                  <a href="https://github.com/parkervg/troll-tweet-detector/blob/master/Trolliness.ipynb">
+                    <h3>
+                      Troll Tweet Detector</h3>
+                  </a>
+                </td>
+                <td class="project-description">
+                  <p>
+                    A school project I completed for LING 111 (Advanced Computational Linguistics).
+                    <br><br>
+                    In the season surrounding the 2016 U.S. presidential election, the goal of a politial troll was to stir up as much polarization as possible, all while blending in as an average American citizen. One group of online trolls that were notoriously
+                    successful were the Russian trolls
+                    <br><br>
+                    This Jupyter notebook explores concepts both in machine learning and linguistics to create a binomial classifier that identifies a tweet as a troll or non-troll. I rely on certain linguistic quirks of the Russian language, like their lack of articles
+                    (e.x. "a", "an", "the") and infrequent use of stopwords.
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    Python, Scikit-machine learning, Random Forest, feature extraction, spaCy, Jupyter notebook
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   </body>
