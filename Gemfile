@@ -33,7 +33,7 @@ gem 'bootstrap', '~> 4.3.1'
 gem 'bcrypt', '~> 3.1.7'
 gem 'jquery-rails'
 gem 'sprockets-rails', '3.2.1'
-gem 'unicorn'
+
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false

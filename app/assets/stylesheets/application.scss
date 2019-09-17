@@ -51,6 +51,7 @@ html {
 div.one {
   background: image-url('lake.jpg') no-repeat center center fixed;
   height: 870px;
+  width: 100%;
   background-position: 50% 50%;
   background-attachment: scroll;
   background-position: center;
@@ -61,6 +62,7 @@ div.one {
 div.two {
   background: image-url('tahoe.jpg') no-repeat center center fixed;
   height: 870px;
+  width: 100%;
   background-position: 50% 50%;
   background-attachment: scroll;
   background-position: center;
@@ -92,6 +94,7 @@ div#one{
 div.three {
   background: image-url('/assets/dune.jpg') no-repeat center center fixed;
   height: 950px;
+  width: 100%;
   background-position: 50% 50%;
   background-attachment: scroll;
   background-position: center;
