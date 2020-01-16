@@ -234,26 +234,26 @@
 
               <tr>
                 <td>
-                  <a href="https://github.com/parkervg/PermitTrends" target="_blank">
+                  <a href="https://devpost.com/software/find-a-ride" target="_blank">
                     <h3>
-                      Permit Trends</h3>
+                      Find-A-Ride</h3>
                   </a>
                 </td>
                 <td class="project-description">
                   <p>
-                    A visualization tool I developed during a summer internship.
+                    A data aggregation tool I built for SB Hacks.
                     <br><br>
-                    The ability to stay on top of recent trends in any quick-changing industry is vital. This visualization tool does just that with datasets of construction permits.
+                    Finding a carpool to and from a University campus should simple. However, the numerous Facebook rideshare pages, all lacking a normalized data format, makes finding the right ride difficult.
                     <br><br>
-                    In PermtTrends, an owner's baseline rate of application for permits is established, and compared to their recent activity. The owner with the most drastic recent uptick in applications are revealed, and their history charted in matplotlib.
+                    In Find-A-Ride, I built a Flask API that scrapes the UCSB Rideshare pages and stores the post and post metadata in a BigQuery database. Then, a RandomForest model for classifying intent (Driver vs. Passenger) and a Bidirectional LSTM for extracting
+                    entities (e.g. destination, origin, price) are used to convert the unstructured, messy data into structured, query-able data.
                     <br><br>
-                    In GeoTrends, the same concept of discovering recent anomalies in data is applied to Geography. DBSCAN is used to find areas which have historically been popular regions to build in. Then, recent permits not within these top areas are clustered and
-                    the nearest intersection found to reveal increasingly popular areas for development.
+                    With the data organized, I implement a fuzzy-matching algorithim using features like haversine distance between coordinates and time of day to return a list of rides sorted by relevance matching a user's preferences.
                   </p>
                 </td>
                 <td>
                   <p>
-                    Python, Docker, nginx, gunicorn, Flask, DBSCAN
+                    Flask, BigQuery, Selenium, Python, Docker, nginx, gunicorn
                   </p>
                 </td>
               </tr>
